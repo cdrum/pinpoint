@@ -46,9 +46,14 @@ struct ConversationUsage {
 struct ChatTurn: Identifiable {
     let id = UUID()
     let role: ChatRole
-    let text: String
+    /// Mutable so a streaming reply can grow in place.
+    var text: String
     /// Which model produced this reply (assistant turns only).
     var model: String? = nil
+    /// Per-message token/cost accounting, shown in the assistant meta row.
+    var tokensIn: Int? = nil
+    var tokensOut: Int? = nil
+    var costUSD: Double? = nil
 }
 
 /// Which photos to show for the selected album.

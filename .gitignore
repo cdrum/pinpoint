@@ -34,3 +34,7 @@ Carthage/Build/
 *.env
 .env*
 secrets.plist
+
+# Local design working files (not part of the app)
+*.zip
+design_handoff_pinpoint_redesign/

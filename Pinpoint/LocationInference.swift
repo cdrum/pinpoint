@@ -16,6 +16,18 @@ enum LocationParsing {
         let confidence: Double
     }
 
+    /// The prose to show while a reply is still streaming: everything before the
+    /// (possibly partial) final `LOCATION:` line, so the machine line never flashes.
+    static func displayPortion(of streamingText: String) -> String {
+        let lines = streamingText.split(separator: "\n", omittingEmptySubsequences: false).map(String.init)
+        if let index = lines.lastIndex(where: {
+            $0.trimmingCharacters(in: .whitespaces).range(of: "^location:", options: [.regularExpression, .caseInsensitive]) != nil
+        }) {
+            return lines[..<index].joined(separator: "\n").trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+        return streamingText.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
     static func extract(from text: String) -> Extraction {
         var lines = text.split(separator: "\n", omittingEmptySubsequences: false).map(String.init)
 

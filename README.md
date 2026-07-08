@@ -12,6 +12,8 @@ billed you.
 It's handy for scanned prints, screenshots, exports that lost their EXIF, or any
 photo where you remember the place but the file forgot it.
 
+![Pinpoint — chatting with a vision model to locate a photo, with the suggested location, map, coordinates, and Pexels reference photos in the inspector](screenshot.png)
+
 > **Status:** early prototype (v0.1). It works and is genuinely useful, but expect
 > rough edges — see [Limitations](#limitations).
 

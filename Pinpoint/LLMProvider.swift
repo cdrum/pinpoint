@@ -25,6 +25,13 @@ struct LLMResponse {
     let usage: LLMUsage?
 }
 
+/// One event from a streaming reply: an incremental text delta, or the final
+/// token/cost accounting emitted once the stream completes.
+enum LLMStreamChunk {
+    case delta(String)
+    case done(LLMUsage?)
+}
+
 /// A pluggable LLM backend. OpenRouter is the only implementation today;
 /// add Anthropic-direct / OpenAI / etc. by conforming new types.
 protocol LLMProvider {
@@ -33,4 +40,11 @@ protocol LLMProvider {
               messages: [ChatMessage],
               model: String,
               apiKey: String) async throws -> LLMResponse
+
+    /// Streaming variant: yields text deltas as they arrive, then a final
+    /// `.done` with usage. Consumers accumulate the deltas into the reply.
+    func chatStream(system: String,
+                    messages: [ChatMessage],
+                    model: String,
+                    apiKey: String) -> AsyncThrowingStream<LLMStreamChunk, Error>
 }

@@ -13,6 +13,14 @@ final class AppSettings: ObservableObject {
         var id: String { rawValue }
     }
 
+    /// Which detail-pane direction from the redesign to show.
+    /// - `conversation`: 2A — single vertical thread with a result card.
+    /// - `inspector`: 2B — chat on the left, persistent map/location inspector.
+    enum DetailLayout: String, CaseIterable, Identifiable {
+        case conversation, inspector
+        var id: String { rawValue }
+    }
+
     @Published var provider: Provider {
         didSet { defaults.set(provider.rawValue, forKey: "provider") }
     }
@@ -31,6 +39,30 @@ final class AppSettings: ObservableObject {
         didSet { defaults.set(pexelsAPIKey, forKey: "pexelsAPIKey") }
     }
 
+    // MARK: - Behavior toggles
+
+    /// Move the editable red pin to the geocoded answer automatically. When off,
+    /// the answer still shows on the map but the user places the pin themselves.
+    @Published var autoDropPin: Bool {
+        didSet { defaults.set(autoDropPin, forKey: "autoDropPin") }
+    }
+    /// Show Pexels reference photos of the guessed place under the result card.
+    @Published var showReferences: Bool {
+        didSet { defaults.set(showReferences, forKey: "showReferences") }
+    }
+    /// Ask for confirmation before writing GPS back into a photo.
+    @Published var confirmBeforeWrite: Bool {
+        didSet { defaults.set(confirmBeforeWrite, forKey: "confirmBeforeWrite") }
+    }
+    /// Soft monthly spend cap (USD) shown as a budget meter. 0 = no cap.
+    @Published var monthlyCapUSD: Double {
+        didSet { defaults.set(monthlyCapUSD, forKey: "monthlyCapUSD") }
+    }
+    /// The detail-pane direction (2A conversation vs 2B inspector).
+    @Published var detailLayout: DetailLayout {
+        didSet { defaults.set(detailLayout.rawValue, forKey: "detailLayout") }
+    }
+
     private let defaults = UserDefaults.standard
 
     private init() {
@@ -39,6 +71,12 @@ final class AppSettings: ObservableObject {
         selectedModelID = defaults.string(forKey: "selectedModelID") ?? "openai/gpt-4o"
         systemPrompt = defaults.string(forKey: "systemPrompt") ?? AppSettings.defaultSystemPrompt
         pexelsAPIKey = defaults.string(forKey: "pexelsAPIKey") ?? ""
+        // Defaults chosen to match the handoff mock (pin + references on, confirm off).
+        autoDropPin = defaults.object(forKey: "autoDropPin") as? Bool ?? true
+        showReferences = defaults.object(forKey: "showReferences") as? Bool ?? true
+        confirmBeforeWrite = defaults.object(forKey: "confirmBeforeWrite") as? Bool ?? false
+        monthlyCapUSD = defaults.object(forKey: "monthlyCapUSD") as? Double ?? 20
+        detailLayout = DetailLayout(rawValue: defaults.string(forKey: "detailLayout") ?? "") ?? .inspector
     }
 
     /// API key for the active provider.

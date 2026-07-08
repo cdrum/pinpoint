@@ -15,6 +15,7 @@
 		67BE3FB29521B02064E62F56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F19605E2ABAA1789C40C45 /* ContentView.swift */; };
 		6BA5DFE0F9FB6776BFAB8B4C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F2E9F01DC54AB091D63B01 /* SettingsView.swift */; };
 		6E8171CB1E462DDB1589CB8C /* PinpointApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A81A398669C5C4E93EF0A7A /* PinpointApp.swift */; };
+		73FCA03F16EF045A58D5B55C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9BDBCA1AE5B50DBADA8AF3 /* Theme.swift */; };
 		829EE56456D5890CE66E70F8 /* PhotoLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D552137AA24E84FDF91AA80 /* PhotoLibraryService.swift */; };
 		B425907F787C788B9C595492 /* RequestHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A6A87958CD4BC235852D65 /* RequestHistory.swift */; };
 		B87846EFD8E68A2F796D8E3E /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188FE8847C15F0A16F7F230 /* HistoryView.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		12F2E9F01DC54AB091D63B01 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3B2B69592C44944711FCC478 /* LocationInference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInference.swift; sourceTree = "<group>"; };
+		3F9BDBCA1AE5B50DBADA8AF3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		43A6A87958CD4BC235852D65 /* RequestHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHistory.swift; sourceTree = "<group>"; };
 		5D552137AA24E84FDF91AA80 /* PhotoLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryService.swift; sourceTree = "<group>"; };
 		810405A75055E92557DCE109 /* LLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMProvider.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				9A81A398669C5C4E93EF0A7A /* PinpointApp.swift */,
 				43A6A87958CD4BC235852D65 /* RequestHistory.swift */,
 				12F2E9F01DC54AB091D63B01 /* SettingsView.swift */,
+				3F9BDBCA1AE5B50DBADA8AF3 /* Theme.swift */,
 			);
 			path = Pinpoint;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				6E8171CB1E462DDB1589CB8C /* PinpointApp.swift in Sources */,
 				B425907F787C788B9C595492 /* RequestHistory.swift in Sources */,
 				6BA5DFE0F9FB6776BFAB8B4C /* SettingsView.swift in Sources */,
+				73FCA03F16EF045A58D5B55C /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
