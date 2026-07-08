@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1360A72BC9284C471E64A423 /* LocationInference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2B69592C44944711FCC478 /* LocationInference.swift */; };
+		3519678B6056B55397C3BFD9 /* LLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810405A75055E92557DCE109 /* LLMProvider.swift */; };
+		3ACB1A16625049E246089409 /* PexelsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6EC03ADEF95BA564E05C6 /* PexelsProvider.swift */; };
+		52060BD65B85FE7B9A73DE8F /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A81BA948AE45A3CD577894 /* AppSettings.swift */; };
+		66C3A18C1E54A8CED2B43301 /* OpenRouterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F558D24261B2D9D893E8EF /* OpenRouterProvider.swift */; };
+		67BE3FB29521B02064E62F56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F19605E2ABAA1789C40C45 /* ContentView.swift */; };
+		6BA5DFE0F9FB6776BFAB8B4C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F2E9F01DC54AB091D63B01 /* SettingsView.swift */; };
+		6E8171CB1E462DDB1589CB8C /* PinpointApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A81A398669C5C4E93EF0A7A /* PinpointApp.swift */; };
+		829EE56456D5890CE66E70F8 /* PhotoLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D552137AA24E84FDF91AA80 /* PhotoLibraryService.swift */; };
+		B425907F787C788B9C595492 /* RequestHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A6A87958CD4BC235852D65 /* RequestHistory.swift */; };
+		B87846EFD8E68A2F796D8E3E /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188FE8847C15F0A16F7F230 /* HistoryView.swift */; };
+		C35EC309D45FA36B51C29FFA /* Geocoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC98AAAC42978D6E5B1B6983 /* Geocoding.swift */; };
+		D4FFB2662EC8377196454165 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C370D045F106CEB3479960C1 /* Models.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12F2E9F01DC54AB091D63B01 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3B2B69592C44944711FCC478 /* LocationInference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInference.swift; sourceTree = "<group>"; };
+		43A6A87958CD4BC235852D65 /* RequestHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHistory.swift; sourceTree = "<group>"; };
+		5D552137AA24E84FDF91AA80 /* PhotoLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryService.swift; sourceTree = "<group>"; };
+		810405A75055E92557DCE109 /* LLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMProvider.swift; sourceTree = "<group>"; };
+		8188FE8847C15F0A16F7F230 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		88F19605E2ABAA1789C40C45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8CF6EC03ADEF95BA564E05C6 /* PexelsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsProvider.swift; sourceTree = "<group>"; };
+		9A81A398669C5C4E93EF0A7A /* PinpointApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinpointApp.swift; sourceTree = "<group>"; };
+		A02A8650B598F2555BC0B015 /* Pinpoint.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pinpoint.entitlements; sourceTree = "<group>"; };
+		B3E78A175084224BAE313FFF /* Pinpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C370D045F106CEB3479960C1 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C5D6CA75C8FD0CF6EC47DA93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CC98AAAC42978D6E5B1B6983 /* Geocoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoding.swift; sourceTree = "<group>"; };
+		D3F558D24261B2D9D893E8EF /* OpenRouterProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRouterProvider.swift; sourceTree = "<group>"; };
+		E2A81BA948AE45A3CD577894 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		65A67E54E2E8DAE39D6B44EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3E78A175084224BAE313FFF /* Pinpoint.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68D923C6C2E14CB15F16279F /* Pinpoint */ = {
+			isa = PBXGroup;
+			children = (
+				E2A81BA948AE45A3CD577894 /* AppSettings.swift */,
+				88F19605E2ABAA1789C40C45 /* ContentView.swift */,
+				CC98AAAC42978D6E5B1B6983 /* Geocoding.swift */,
+				8188FE8847C15F0A16F7F230 /* HistoryView.swift */,
+				C5D6CA75C8FD0CF6EC47DA93 /* Info.plist */,
+				810405A75055E92557DCE109 /* LLMProvider.swift */,
+				3B2B69592C44944711FCC478 /* LocationInference.swift */,
+				C370D045F106CEB3479960C1 /* Models.swift */,
+				D3F558D24261B2D9D893E8EF /* OpenRouterProvider.swift */,
+				8CF6EC03ADEF95BA564E05C6 /* PexelsProvider.swift */,
+				5D552137AA24E84FDF91AA80 /* PhotoLibraryService.swift */,
+				A02A8650B598F2555BC0B015 /* Pinpoint.entitlements */,
+				9A81A398669C5C4E93EF0A7A /* PinpointApp.swift */,
+				43A6A87958CD4BC235852D65 /* RequestHistory.swift */,
+				12F2E9F01DC54AB091D63B01 /* SettingsView.swift */,
+			);
+			path = Pinpoint;
+			sourceTree = "<group>";
+		};
+		8ED103F4267479CB7FC58187 = {
+			isa = PBXGroup;
+			children = (
+				68D923C6C2E14CB15F16279F /* Pinpoint */,
+				65A67E54E2E8DAE39D6B44EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D568B2F0B20E02E5EDD63A1 /* Pinpoint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17A2CA28D866EBCEE0E0E6D7 /* Build configuration list for PBXNativeTarget "Pinpoint" */;
+			buildPhases = (
+				B493E377DBD68364DD2AA0A1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pinpoint;
+			packageProductDependencies = (
+			);
+			productName = Pinpoint;
+			productReference = B3E78A175084224BAE313FFF /* Pinpoint.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F5E8391051B59A6584A6478 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0D568B2F0B20E02E5EDD63A1 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = D8B577B5E332EEDFA130EC9F /* Build configuration list for PBXProject "Pinpoint" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8ED103F4267479CB7FC58187;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 65A67E54E2E8DAE39D6B44EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D568B2F0B20E02E5EDD63A1 /* Pinpoint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B493E377DBD68364DD2AA0A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52060BD65B85FE7B9A73DE8F /* AppSettings.swift in Sources */,
+				67BE3FB29521B02064E62F56 /* ContentView.swift in Sources */,
+				C35EC309D45FA36B51C29FFA /* Geocoding.swift in Sources */,
+				B87846EFD8E68A2F796D8E3E /* HistoryView.swift in Sources */,
+				3519678B6056B55397C3BFD9 /* LLMProvider.swift in Sources */,
+				1360A72BC9284C471E64A423 /* LocationInference.swift in Sources */,
+				D4FFB2662EC8377196454165 /* Models.swift in Sources */,
+				66C3A18C1E54A8CED2B43301 /* OpenRouterProvider.swift in Sources */,
+				3ACB1A16625049E246089409 /* PexelsProvider.swift in Sources */,
+				829EE56456D5890CE66E70F8 /* PhotoLibraryService.swift in Sources */,
+				6E8171CB1E462DDB1589CB8C /* PinpointApp.swift in Sources */,
+				B425907F787C788B9C595492 /* RequestHistory.swift in Sources */,
+				6BA5DFE0F9FB6776BFAB8B4C /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		32DFF07A62AC0A0AAABD8DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3AE0A53DC5CA4D21F272B6DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pinpoint/Pinpoint.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Pinpoint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdrum.Pinpoint;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AD6587B0C2E9C438593AEE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pinpoint/Pinpoint.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Pinpoint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdrum.Pinpoint;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C7FD1A3B8477BC062D774E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17A2CA28D866EBCEE0E0E6D7 /* Build configuration list for PBXNativeTarget "Pinpoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6587B0C2E9C438593AEE09 /* Debug */,
+				3AE0A53DC5CA4D21F272B6DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D8B577B5E332EEDFA130EC9F /* Build configuration list for PBXProject "Pinpoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7FD1A3B8477BC062D774E15 /* Debug */,
+				32DFF07A62AC0A0AAABD8DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F5E8391051B59A6584A6478 /* Project object */;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App Sandbox is OFF for this personal, non-distributed tool. Under the
+	     sandbox, sending Apple Events to Photos failed with -600 ("Application
+	     isn't running") even with the automation + temporary-exception
+	     entitlements. Photo library access and networking are gated by their
+	     own privacy permissions (TCC), not the sandbox, so they still work. -->
+	<key>com.apple.security.app-sandbox</key>
+	<false/>
+	<!-- Lets the app script Photos to write the caption; the user still grants
+	     the Automation privacy prompt on first use. -->
+	<key>com.apple.security.automation.apple-events</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>Pinpoint</string>
+	<key>CFBundleDisplayName</key>
+	<string>Pinpoint</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.cdrum.Pinpoint</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<!-- Required: shown when the app first asks for photo library access. -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Pinpoint reads your photo library to find photos that are missing location data and, with your confirmation, writes back locations it infers.</string>
+	<!-- Shown when the app first scripts Photos to write a caption. -->
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Pinpoint controls the Photos app to write an inferred caption/description onto the photo you choose.</string>
+</dict>
+</plist>

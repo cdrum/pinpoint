@@ -1,0 +1,22 @@
+name: Pinpoint
+options:
+  bundleIdPrefix: com.cdrum
+  deploymentTarget:
+    macOS: "14.0"
+targets:
+  Pinpoint:
+    type: application
+    platform: macOS
+    sources: [Pinpoint]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.cdrum.Pinpoint
+        CODE_SIGN_ENTITLEMENTS: Pinpoint/Pinpoint.entitlements
+        INFOPLIST_FILE: Pinpoint/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        MARKETING_VERSION: "0.1"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        # Set your Apple Developer team ID here (or leave blank and let Xcode
+        # manage signing automatically for local runs).
+        DEVELOPMENT_TEAM: ""
