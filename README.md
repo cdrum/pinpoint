@@ -1,4 +1,4 @@
-# Pinpoint
+# Pinpoint 📍
 
 **Figure out where your undated, un-located photos were taken — by asking a vision AI — and write the location back into Apple Photos.**
 
