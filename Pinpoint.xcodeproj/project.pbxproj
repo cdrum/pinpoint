@@ -17,6 +17,7 @@
 		6E8171CB1E462DDB1589CB8C /* PinpointApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A81A398669C5C4E93EF0A7A /* PinpointApp.swift */; };
 		73FCA03F16EF045A58D5B55C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9BDBCA1AE5B50DBADA8AF3 /* Theme.swift */; };
 		829EE56456D5890CE66E70F8 /* PhotoLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D552137AA24E84FDF91AA80 /* PhotoLibraryService.swift */; };
+		8F07E611D0A0CE55F8BDEC1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D614961AE7FDA98CD0099CD3 /* Assets.xcassets */; };
 		B425907F787C788B9C595492 /* RequestHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A6A87958CD4BC235852D65 /* RequestHistory.swift */; };
 		B87846EFD8E68A2F796D8E3E /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188FE8847C15F0A16F7F230 /* HistoryView.swift */; };
 		C35EC309D45FA36B51C29FFA /* Geocoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC98AAAC42978D6E5B1B6983 /* Geocoding.swift */; };
@@ -40,6 +41,7 @@
 		C5D6CA75C8FD0CF6EC47DA93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CC98AAAC42978D6E5B1B6983 /* Geocoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoding.swift; sourceTree = "<group>"; };
 		D3F558D24261B2D9D893E8EF /* OpenRouterProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRouterProvider.swift; sourceTree = "<group>"; };
+		D614961AE7FDA98CD0099CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2A81BA948AE45A3CD577894 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				E2A81BA948AE45A3CD577894 /* AppSettings.swift */,
+				D614961AE7FDA98CD0099CD3 /* Assets.xcassets */,
 				88F19605E2ABAA1789C40C45 /* ContentView.swift */,
 				CC98AAAC42978D6E5B1B6983 /* Geocoding.swift */,
 				8188FE8847C15F0A16F7F230 /* HistoryView.swift */,
@@ -91,6 +94,7 @@
 			buildConfigurationList = 17A2CA28D866EBCEE0E0E6D7 /* Build configuration list for PBXNativeTarget "Pinpoint" */;
 			buildPhases = (
 				B493E377DBD68364DD2AA0A1 /* Sources */,
+				FF7B8B504AED80D48952874E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +139,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF7B8B504AED80D48952874E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F07E611D0A0CE55F8BDEC1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B493E377DBD68364DD2AA0A1 /* Sources */ = {
@@ -221,6 +236,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Pinpoint/Pinpoint.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -242,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Pinpoint/Pinpoint.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
